@@ -17,11 +17,12 @@
       </script>
 
       <iframe name="newsFrame" width=100% height=400></iframe>
-      <form> 
-        <input type = "button" onclick = "updateNewsItem(+1)" value = "next"> 
-        <input type = "button" onclick = "updateNewsItem(-1)" value = "prev"> 
-     </form> 
-  
+      <div class="float-right">
+        <p align="right">
+          <button onclick = "updateNewsItem(-1)" id="newer">Newer</button>
+          <button onclick = "updateNewsItem(+1)" id="older">Older</button>
+        </p>
+      </div>
     </div>
   </body>
 </html>
